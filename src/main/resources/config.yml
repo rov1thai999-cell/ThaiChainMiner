@@ -1,0 +1,219 @@
+# ═══════════════════════════════════════════════════════════════
+# ThaiChainMiner - ระบบขุดแร่สายสำหรับ Minecraft 1.20+
+# ═══════════════════════════════════════════════════════════════
+
+# รายชื่อโลกที่เปิดใช้งานปลั๊กอิน
+# ใส่ชื่อโลกในรูปแบบ world1, world2, etc.
+enabled-worlds:
+  - world
+  - world_nether
+  - world_the_end
+
+# ═══════════════════════════════════════════════════════════════
+# การตั้งค่าระบบขุดหิน (Stone Miner)
+# ═══════════════════════════════════════════════════════════════
+stone-miner:
+  # เปิด/ปิดระบบขุดหิน
+  enabled: true
+  # จำนวนบล็อก STONE ในสายเชื่อมต่อ เพื่อให้ระบบทำงาน
+  min-vein-size: 10
+  # จำนวนสูงสุดที่ขุดได้ต่อครั้ง
+  max-blocks-per-break: 4
+
+# ═══════════════════════════════════════════════════════════════
+# การตั้งค่าระบบขุดแร่ยกสาย (Vein Miner)
+# ═══════════════════════════════════════════════════════════════
+vein-miner:
+  # COAL_ORE
+  coal_ore:
+    enabled: true
+    max-blocks: 64
+  
+  # IRON_ORE
+  iron_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # GOLD_ORE
+  gold_ore:
+    enabled: true
+    max-blocks: 16
+  
+  # DIAMOND_ORE
+  diamond_ore:
+    enabled: true
+    max-blocks: 8
+  
+  # LAPIS_LAZULI_ORE
+  lapis_lazuli_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # REDSTONE_ORE
+  redstone_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # EMERALD_ORE
+  emerald_ore:
+    enabled: true
+    max-blocks: 4
+  
+  # COPPER_ORE
+  copper_ore:
+    enabled: true
+    max-blocks: 48
+  
+  # NETHER_QUARTZ_ORE
+  nether_quartz_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # NETHER_GOLD_ORE
+  nether_gold_ore:
+    enabled: true
+    max-blocks: 16
+  
+  # ANCIENT_DEBRIS
+  ancient_debris:
+    enabled: true
+    max-blocks: 2
+  
+  # DEEPSLATE_COAL_ORE
+  deepslate_coal_ore:
+    enabled: true
+    max-blocks: 64
+  
+  # DEEPSLATE_IRON_ORE
+  deepslate_iron_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # DEEPSLATE_GOLD_ORE
+  deepslate_gold_ore:
+    enabled: true
+    max-blocks: 16
+  
+  # DEEPSLATE_DIAMOND_ORE
+  deepslate_diamond_ore:
+    enabled: true
+    max-blocks: 8
+  
+  # DEEPSLATE_LAPIS_LAZULI_ORE
+  deepslate_lapis_lazuli_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # DEEPSLATE_REDSTONE_ORE
+  deepslate_redstone_ore:
+    enabled: true
+    max-blocks: 32
+  
+  # DEEPSLATE_EMERALD_ORE
+  deepslate_emerald_ore:
+    enabled: true
+    max-blocks: 4
+  
+  # DEEPSLATE_COPPER_ORE
+  deepslate_copper_ore:
+    enabled: true
+    max-blocks: 48
+
+# ═══════════════════════════════════════════════════════════════
+# การตั้งค่าความเสียหายของที่ขุด (Pickaxe Damage)
+# ═══════════════════════════════════════════════════════════════
+pickaxe-damage:
+  # ค่าความเสียหายต่อบล็อก (หน่วย)
+  damage-per-block: 1
+  
+  # การตั้งค่าเฉพาะแต่ละเทียร์
+  wooden_pickaxe:
+    damage-per-block: 2
+  
+  stone_pickaxe:
+    damage-per-block: 1
+  
+  iron_pickaxe:
+    damage-per-block: 1
+  
+  golden_pickaxe:
+    damage-per-block: 3
+  
+  diamond_pickaxe:
+    damage-per-block: 1
+  
+  netherite_pickaxe:
+    damage-per-block: 1
+
+# ═══════════════════════════════════════════════════════════════
+# การตั้งค่าเสียง (Sound Design)
+# ═══════════════════════════════════════════════════════════════
+sound:
+  # เปิด/ปิดระบบเสียง
+  enabled: true
+  # ���ัวคูณเสียง (volume multiplier)
+  volume-multiplier: 1.0
+  # เปิด/ปิดการเล่นเสียงเบิ้ล (Sound Double Simulation)
+  double-sound-simulation: true
+  # หน่วงเวลาระหว่างเสียง (มิลลิวินาที)
+  sound-delay: 100
+  # ปรับค่า Pitch (ระดับเสียง)
+  pitch-min: 0.9
+  pitch-max: 1.1
+
+# ═══════════════════════════════════════════════════════════════
+# การตั้งค่าข้อความและส่วนแสดงผล (Messages)
+# ═══════════════════════════════════════════════════════════════
+messages:
+  # ข้อความที่ปิดการใช้งาน
+  disabled-world: "⛏️ ระบบขุดแร่สายปิดใช้งานในโลกนี้"
+  
+  # ข้อความที่เปิดใช้งานสำเร็จ
+  enabled: "✅ เปิดใช้งานระบบขุดแร่สายในโลก {world} สำเร็จ"
+  
+  # ข้อความปิดใช้งานสำเร็จ
+  disabled: "❌ ปิดใช้งานระบบขุดแร่สายในโลก {world} สำเร็จ"
+  
+  # ข้อความรีโหลด config
+  reloaded: "🔄 โหลดไฟล์ config ใหม่สำเร็จ"
+  
+  # ข้อความแบน
+  banned: "🚫 ลบระเบียนของผู้เล่น {player} จากระบบขุดแร่สายสำเร็จ"
+  
+  # ข้อความปลดแบน
+  unbanned: "✨ คืนสิทธิ์ให้ผู้เล่น {player} สามารถใช้ระบบขุดแร่สายได้"
+  
+  # ข้อความบัญชีแบนว่าง
+  banlist-empty: "📋 ไม่มีผู้เล่นที่ถูกลบระเบียนในขณะนี้"
+  
+  # ข้อความบัญชีแบน
+  banlist-header: "📋 ========== รายชื่อผู้เล่นที่ถูกลบระเบียน =========="
+  banlist-item: "  • {player}"
+  banlist-footer: "========================================"
+  
+  # ข้อความหลัก
+  help-header: "⛏️ ========== คำสั่ง ThaiChainMiner =========="
+  help-on: "  /mine on - เปิดใช้ง��นระบบในโลกปัจจุบัน"
+  help-off: "  /mine off - ปิดใช้งานระบบในโลกปัจจุบัน"
+  help-list: "  /mine list - แสดงรายชื่อโลกที่เปิดใช้งาน"
+  help-reload: "  /mine reload - รีโหลดไฟล์ config"
+  help-ban: "  /mine ban <ชื่อผู้เล่น> - บล็อกผู้เล่น"
+  help-unban: "  /mine unban <ชื่อผู้เล่น> - ปลดบล็อกผู้เล่น"
+  help-banlist: "  /mine banlist - แสดงรายชื่อผู้เล่นที่ถูกบล็อก"
+  help-footer: "======================================"
+  
+  # ข้อความรายชื่อโลก
+  list-header: "🌍 ========== โลกที่เปิดใช้งาน =========="
+  list-item: "  • {world}"
+  list-footer: "======================================"
+  
+  # ข้อความข้อผิดพลาด
+  no-permission: "❌ คุณไม่มีสิทธิ์ใช้คำสั่งนี้"
+  player-not-found: "❌ ไม่พบผู้เล่นชื่อ {player}"
+  already-banned: "⚠️ ผู้เล่น {player} ถูกบล็อกแล้ว"
+  not-banned: "⚠️ ผู้เล่น {player} ไม่ได้ถูกบล็อก"
+
+# ═══════════════════════════════════════════════════════════════
+# ฐานข้อมูลรายชื่อผู้เล่นที่ถูกแบน (Banned Players Database)
+# ═══════════════════════════════════════════════════════════════
+banned-players: []

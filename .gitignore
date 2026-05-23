@@ -1,0 +1,19 @@
+# Maven
+target/
+*.jar
+*.war
+*.zip
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft
+work/
+*.log

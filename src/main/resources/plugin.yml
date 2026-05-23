@@ -1,0 +1,20 @@
+name: ThaiChainMiner
+version: 1.0.0
+main: com.thaichainminer.ThaiChainMinerPlugin
+author: ThaiChainMiner
+description: "ปลั๊กอินระบบขุดแร่สายสำหรับ Minecraft"
+api-version: 1.20
+
+commands:
+  mine:
+    description: "คำสั่งหลักของระบบ ThaiChainMiner"
+    usage: "/mine <on|off|list|reload|ban|unban|banlist|help>"
+    aliases: [miner, chainminer]
+
+permissions:
+  thaichainminer.command.mine:
+    description: "ใช้คำสั่ง /mine"
+    default: op
+  thaichainminer.use:
+    description: "ใช้งานระบบขุดแร่สาย"
+    default: true
